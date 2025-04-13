@@ -1,0 +1,129 @@
+.main-navbar {
+    background: linear-gradient(90deg, #2b323c 0%, #737d89 100%);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo-img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+    transform: translateY(-2px);
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .book-now-btn {
+    background: #0c4b32;
+    color: #fdfeff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .book-now-btn:hover {
+    background: #09845f;
+  }
+  
+  .menu-icon {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .buttons {
+        display: flex;
+    }
+
+
+    .menu-icon {
+      display: flex;
+      align-items: center;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 73px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background: linear-gradient(90deg, #2b323c 0%, #737d89 100%);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .nav-links.active {
+      transform: translateX(0);
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      padding: 1rem;
+      align-items: flex-start;
+    }
+  
+    .nav-links li {
+      margin: 1rem 0;
+    }
+  
+    .nav-links a {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-navbar {
+      padding: 1rem;
+    }
+  
+    .logo-img {
+      height: 30px;
+      width: 200px;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+    }
+  }
