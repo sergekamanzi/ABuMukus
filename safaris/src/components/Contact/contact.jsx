@@ -1,0 +1,81 @@
+import React from 'react';
+import './contact.css';
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { MdEmail, MdPhone, MdLocationPin } from 'react-icons/md';
+
+const Contact = () => {
+  return (
+    <footer className="contact-container">
+      <div className="contact-content">
+        {/* Left Section */}
+        <div className="contact-section">
+          <img src="/Abu logo2.png" alt="Logo" className="logo1-img" />
+          <p>
+            Going on an adventure is not about just fun, it's all about yourself 
+            and entertaining yourself. Get the best adventure activities in you 
+            and start living the moment.
+          </p>
+          <div className="social-icons">
+            <a href="#"><FaFacebookF /></a>
+            <a href="#"><FaTwitter /></a>
+            <a href="#"><FaLinkedinIn /></a>
+            <a href="#"><FaInstagram /></a>
+          </div>
+        </div>
+
+        {/* Useful Links Section */}
+        <div className="contact-section">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        {/* Support Links Section */}
+        <div className="contact-section">
+          <h3>Support Links</h3>
+          <ul>
+            <li><a href="#">Ask a Question</a></li>
+            <li><a href="#">Delivery Terms</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        {/* Reach Us Section */}
+        <div className="contact-section">
+          <h3>Reach Us</h3>
+          <ul>
+            <li>
+              <MdLocationPin className="icon" />
+              Kigali,Rwanda
+            </li>
+            <li>
+              <MdEmail className="icon" />
+              example@example.com
+            </li>
+            <li>
+              <MdPhone className="icon" />
+              (334) 336 3346
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Footer Bottom */}
+      <div className="footer-bottom">
+        <p>© 2025 . Created by serge.K</p>
+        <div className="footer-links">
+          <a href="#">Help</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Contact;

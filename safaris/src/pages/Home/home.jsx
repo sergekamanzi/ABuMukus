@@ -97,13 +97,13 @@ const Home = () => {
       {/* Video Section */}
       <section className='video-section'>
         <video autoPlay loop muted playsInline className='background-video'>
-        <source src="/Rwanda.mp4" type="video/mp4" />
+        <source src="/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className='video-content'>
-          <h3>Take only memories, leave only footprints</h3>
+          <h3>Enjoy the Adventure, Take only memories,<br/> leave only footprints</h3>
           <button>
-            Check Availability
+            Book now
           </button>
         </div>
       </section>

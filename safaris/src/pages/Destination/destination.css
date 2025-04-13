@@ -1,0 +1,101 @@
+
+  /* Destination Body Section */
+  .destination-body {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  .destination-header h1 {
+    font-size: 2.5rem;
+    color: #ff8c00; /* Orange color matching the image */
+    margin-bottom: 10px;
+  }
+  
+  .destination-header p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Grid Layout for Destinations */
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Destination Item Styles */
+  .destination-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .destination-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .destination-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: lowercase;
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets (768px and below) */
+  @media (max-width: 768px) {
+    .destination-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .destination-header h1 {
+      font-size: 2rem;
+    }
+  
+    .destination-header p {
+      font-size: 1rem;
+    }
+  
+    .destination-item img {
+      height: 180px;
+    }
+  }
+  
+  /* Mobile (480px and below) */
+  @media (max-width: 480px) {
+    .destination-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .destination-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .destination-header p {
+      font-size: 0.9rem;
+    }
+  
+    .destination-item img {
+      height: 150px;
+    }
+  
+    .destination-label {
+      font-size: 0.9rem;
+    }
+  }
