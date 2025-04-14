@@ -1,0 +1,353 @@
+/* gallery.css */
+
+/* -------------------------------- */
+/* Gallery Section Styles */
+/* -------------------------------- */
+
+/* General styles for the gallery-body section */
+.gallery-body {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.gallery-body h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #165c30;
+}
+
+.gallery-body p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grid layout for the gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling for each gallery item */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Specific positioning for each item to match the layout */
+.item-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.item-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.item-3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.item-4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.item-5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* -------------------------------- */
+/* Testimonial Section Styles */
+/* -------------------------------- */
+
+/* General styles for the testimonial-body section */
+.testimonial-body {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/test.jpg') center/cover no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+.testimonial-body h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ccc8c2; /* Orange color for the heading */
+}
+
+.testimonial-body h2 span{
+    color: #165c30;
+}
+
+/* Slider container */
+.testimonial-slider {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation arrows */
+.nav-arrow {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-arrow:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
+
+/* Testimonial content */
+.testimonial-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    gap: 20px;
+}
+
+/* Testimonial item */
+.testimonial-item {
+    flex: 1;
+    padding: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.testimonial-item .location {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.testimonial-item .rating {
+    color: #f5a623; /* Orange stars */
+    margin-bottom: 10px;
+}
+
+.testimonial-item .rating span {
+    font-size: 1.2rem;
+}
+
+.testimonial-item .review {
+    font-size: 1.1rem;
+    font-style: italic;
+    max-width: 300px;
+}
+
+/* -------------------------------- */
+/* Responsive Design for Both Sections */
+/* -------------------------------- */
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    /* Gallery Section */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .item-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .item-2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .item-3 {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .item-4 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .item-5 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .gallery-body h2 {
+        font-size: 2rem;
+    }
+
+    .gallery-body p {
+        font-size: 1rem;
+    }
+
+    /* Testimonial Section */
+    .testimonial-body h2 {
+        font-size: 2rem;
+    }
+
+    .testimonial-content {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .testimonial-item {
+        flex: 0 0 100%; /* Show only 1 testimonial on smaller screens */
+    }
+
+    .testimonial-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .testimonial-item .review {
+        font-size: 1rem;
+        max-width: 250px;
+    }
+
+    .nav-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    /* Gallery Section */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-5 {
+        grid-column: 1 / 2;
+    }
+
+    .item-1 {
+        grid-row: 1 / 2;
+    }
+
+    .item-2 {
+        grid-row: 2 / 3;
+    }
+
+    .item-3 {
+        grid-row: 3 / 4;
+    }
+
+    .item-4 {
+        grid-row: 4 / 5;
+    }
+
+    .item-5 {
+        grid-row: 5 / 6;
+    }
+
+    .gallery-body h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-body p {
+        font-size: 0.9rem;
+    }
+
+    /* Testimonial Section */
+    .testimonial-body h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-item {
+        flex: 0 0 100%; /* Ensure only 1 testimonial is shown */
+    }
+
+    .testimonial-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-item .review {
+        font-size: 0.9rem;
+        max-width: 200px;
+    }
+
+    .nav-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}
+
+/* For larger screens (1200px and above) */
+@media (min-width: 1200px) {
+    .testimonial-item {
+        flex: 0 0 33.33%; /* Show 3 testimonials at a time */
+    }
+}
+
+/* For medium screens (769px to 1199px) */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .testimonial-item {
+        flex: 0 0 50%; /* Show 2 testimonials at a time */
+    }
+}
