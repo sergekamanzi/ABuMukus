@@ -75,7 +75,7 @@ const About = () => {
         <div className="last-container">
           {/* Left Side - Image */}
           <div className="last-content">
-            <h2>About <span>AbuMukuSafaris</span></h2>
+            <h2>About <span>MukusLuxurySafaris</span></h2>
             <p>
             Welcome to Rwanda Explore — your trusted partner in discovering the beauty,
              culture, and hidden gems of Rwanda. We offer guided tours across breathtaking
