@@ -1,5 +1,6 @@
 .main-navbar {
-    background: linear-gradient(90deg, #2b323c 0%, #737d89 100%);
+  /*  background: linear-gradient(90deg, #2b323c 0%, #737d89 100%); */
+    background-color: #1a2c34;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
