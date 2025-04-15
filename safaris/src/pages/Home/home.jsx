@@ -22,7 +22,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className='hero-section' style={{ backgroundImage: `url(${slides[currentSlide]})` }}>
         <div className='hero-content'>
-          <h2>Start a Trip with<br/> ABU MUKU SAFARIS</h2>
+          <h2>Start a Trip With The MukusLuxurySafaris</h2>
           <p>
             Discover the wild like never before, where every journey tells a story. 
             From breathtaking landscapes to unforgettable wildlife encounters.
