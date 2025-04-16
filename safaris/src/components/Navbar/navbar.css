@@ -61,6 +61,10 @@
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
   }
+
+  .buttons a  {
+    text-decoration: none;
+   }
   
   .book-now-btn:hover {
     background: #09845f;

@@ -4,10 +4,14 @@ import { IoIosArrowForward } from "react-icons/io";
 import { FaMapMarkedAlt, FaHiking, FaLanguage, FaWifi, FaShuttleVan, FaHotel } from "react-icons/fa";
 
 const Home = () => {
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.me/250784468599", "_blank");
+  };
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    '/hero1.jpg',
-    '/hero2.jpg'
+    '/hero.jpeg',
+    '/hero3.jpeg'
   ];
 
   useEffect(() => {
@@ -27,7 +31,7 @@ const Home = () => {
             Discover the wild like never before, where every journey tells a story. 
             From breathtaking landscapes to unforgettable wildlife encounters.
           </p>
-          <button>
+          <button onClick={handleWhatsAppClick}>
             Book Now
             <IoIosArrowForward />
           </button>
@@ -102,7 +106,7 @@ const Home = () => {
         </video>
         <div className='video-content'>
           <h3>Enjoy the Adventure, Take only memories,<br/> leave only footprints</h3>
-          <button>
+          <button onClick={handleWhatsAppClick}>
             Book now
           </button>
         </div>

@@ -55,11 +55,11 @@ const Contact = () => {
             </li>
             <li>
               <MdEmail className="icon" />
-              example@example.com
+              themukusluxurysafaris@gmail.com
             </li>
             <li>
               <MdPhone className="icon" />
-              (334) 336 3346
+              +250784468599 & +250782162078
             </li>
           </ul>
         </div>

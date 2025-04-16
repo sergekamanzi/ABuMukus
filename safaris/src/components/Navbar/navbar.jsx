@@ -43,9 +43,18 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+       
         <div className="buttons">
-          <button className="book-now-btn">Book Now</button>
-        </div>
+            <a
+              href="https://wa.me/250784468599"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="book-now-btn"
+            >
+              Book Now
+            </a>
+          </div>
+
       </div>
     </nav>
   );

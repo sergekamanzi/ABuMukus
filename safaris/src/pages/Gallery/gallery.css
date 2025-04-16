@@ -90,7 +90,7 @@
 .testimonial-body {
     padding: 40px 20px;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/test.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/test.jpeg') center/cover no-repeat;
     color: #fff;
     position: relative;
 }

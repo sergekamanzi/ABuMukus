@@ -91,19 +91,19 @@ const Gallery = () => {
         </p>
         <div className="gallery-grid">
           <div className="gallery-item item-1">
-            <img src="/1.jpg" alt="Gallery Image 1" />
+            <img src="/1.jpeg" alt="Gallery Image 1" />
           </div>
           <div className="gallery-item item-2">
-            <img src="/2.jpg" alt="Gallery Image 2" />
+            <img src="/4.jpeg" alt="Gallery Image 2" />
           </div>
           <div className="gallery-item item-3">
-            <img src="/3.jpg" alt="Gallery Image 3" />
+            <img src="/2.jpeg" alt="Gallery Image 3" />
           </div>
           <div className="gallery-item item-4">
-            <img src="/4.jpg" alt="Gallery Image 4" />
+            <img src="/3.jpeg" alt="Gallery Image 4" />
           </div>
           <div className="gallery-item item-5">
-            <img src="/5.jpg" alt="Gallery Image 5" />
+            <img src="/5.jpeg" alt="Gallery Image 5" />
           </div>
         </div>
       </section>
