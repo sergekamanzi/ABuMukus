@@ -19,7 +19,6 @@ const Contact = () => {
           <div className="social-icons">
             <a href="#"><FaFacebookF /></a>
             <a href="#"><FaTwitter /></a>
-            <a href="#"><FaLinkedinIn /></a>
             <a href="#"><FaInstagram /></a>
           </div>
         </div>
