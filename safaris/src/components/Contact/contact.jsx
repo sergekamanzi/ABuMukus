@@ -1,5 +1,6 @@
 import React from 'react';
 import './contact.css';
+import { Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { MdEmail, MdPhone, MdLocationPin } from 'react-icons/md';
 
@@ -27,11 +28,10 @@ const Contact = () => {
         <div className="contact-section">
           <h3>Useful Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/why-us">About</Link></li>
+            <li><Link to="/destinations">Destinations</Link></li>
+            <li><Link to="/gallery">Gallery</Link></li>
           </ul>
         </div>
 
