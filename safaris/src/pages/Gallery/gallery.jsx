@@ -123,6 +123,51 @@ const Gallery = () => {
           <div className="gallery-item item-10">
             <img src="/11.jpeg" alt="Gallery Image 11" />
           </div>
+          <div className="gallery-item item-9">
+            <img src="/12.jpeg" alt="Gallery Image 12" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/13.jpeg" alt="Gallery Image 13" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/14.jpeg" alt="Gallery Image 14" />
+          </div>
+          <div className="gallery-item item-9">
+            <img src="/15.jpeg" alt="Gallery Image 15" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/16.jpeg" alt="Gallery Image 16" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/17.jpeg" alt="Gallery Image 17" />
+          </div>
+          <div className="gallery-item item-9">
+            <img src="/18.jpeg" alt="Gallery Image 18" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/19.jpeg" alt="Gallery Image 19" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/20.jpeg" alt="Gallery Image 20" />
+          </div>
+          <div className="gallery-item item-9">
+            <img src="/21.jpeg" alt="Gallery Image 21" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/22.jpeg" alt="Gallery Image 22" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/23.jpeg" alt="Gallery Image 23" />
+          </div>
+          <div className="gallery-item item-9">
+            <img src="/24.jpeg" alt="Gallery Image 24" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/25.jpeg" alt="Gallery Image 25" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/26.jpeg" alt="Gallery Image 26" />
+          </div>
         </div>
       </section>
 
