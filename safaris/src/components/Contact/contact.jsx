@@ -34,15 +34,7 @@ const Contact = () => {
           </ul>
         </div>
 
-        {/* Support Links Section */}
-        <div className="contact-section">
-          <h3>Support Links</h3>
-          <ul>
-            <li><a href="#">Ask a Question</a></li>
-            <li><a href="#">Delivery Terms</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </div>
+       
 
         {/* Reach Us Section */}
         <div className="contact-section">
