@@ -98,12 +98,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className='video-section'>
-        <video autoPlay loop muted playsInline className='background-video'>
-        <source src="/Rwanda.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      {/* Image Section */}
+      <section className='video-section' style={{ backgroundImage: `url(/back1.jpeg)` }}>
         <div className='video-content'>
           <h3>Enjoy the Adventure, Take only memories,<br/> leave only footprints</h3>
           <button onClick={handleWhatsAppClick}>
