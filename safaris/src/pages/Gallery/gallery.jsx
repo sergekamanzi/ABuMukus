@@ -105,6 +105,24 @@ const Gallery = () => {
           <div className="gallery-item item-5">
             <img src="/5.jpeg" alt="Gallery Image 5" />
           </div>
+          <div className="gallery-item item-6">
+            <img src="/6.jpeg" alt="Gallery Image 6" />
+          </div>
+          <div className="gallery-item item-7">
+            <img src="/7.jpeg" alt="Gallery Image 7" />
+          </div>
+          <div className="gallery-item item-8">
+            <img src="/8.jpeg" alt="Gallery Image 8" />
+          </div>
+          <div className="gallery-item item-9">
+            <img src="/9.jpeg" alt="Gallery Image 9" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/10.jpeg" alt="Gallery Image 10" />
+          </div>
+          <div className="gallery-item item-10">
+            <img src="/11.jpeg" alt="Gallery Image 11" />
+          </div>
         </div>
       </section>
 
