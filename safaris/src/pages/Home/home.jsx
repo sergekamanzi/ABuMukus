@@ -8,23 +8,14 @@ const Home = () => {
     window.open("https://wa.me/250784468599", "_blank");
   };
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [
-    '/hero.jpeg',
-    '/hero3.jpeg'
-  ];
-
-  useEffect(() => {
-    const slideInterval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(slideInterval);
-  }, [slides.length]);
-
   return (
     <>
       {/* Hero Section */}
-      <section className='hero-section' style={{ backgroundImage: `url(${slides[currentSlide]})` }}>
+      <section className='hero-section'>
+        <video autoPlay muted loop className='hero-video'>
+          <source src="/abu.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className='hero-content'>
           <h2>Start a Trip With The MukusLuxurySafaris</h2>
           <p>
