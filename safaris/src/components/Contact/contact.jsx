@@ -18,8 +18,8 @@ const Contact = () => {
           </p>
           <div className="social-icons">
             <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaInstagram /></a>
+            <a href="https://www.tiktok.com/@the.mukus.luxury?_t=ZM-8w34evux0dz&_r=1" target="_blank"><FaTiktok /></a>
+            <a href="https://www.instagram.com/themukusluxury?igsh=MTA1enhzaW5peWo3Zw%3D%3D" target="_blank"><FaInstagram /></a>
           </div>
         </div>
 
