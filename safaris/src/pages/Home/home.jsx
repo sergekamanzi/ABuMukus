@@ -90,7 +90,7 @@ const Home = () => {
       </section>
 
       {/* Image Section */}
-      <section className='video-section' style={{ backgroundImage: `url(/back1.jpeg)` }}>
+      <section className='video-section' style={{ backgroundImage: `url(/aa.jpeg)` }}>
         <div className='video-content'>
           <h3>Enjoy the Adventure, Take only memories,<br/> leave only footprints</h3>
           <button onClick={handleWhatsAppClick}>

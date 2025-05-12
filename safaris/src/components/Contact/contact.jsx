@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact.css';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaTiktok, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { MdEmail, MdPhone, MdLocationPin } from 'react-icons/md';
 
 const Contact = () => {
@@ -17,7 +17,7 @@ const Contact = () => {
             and start living the moment.
           </p>
           <div className="social-icons">
-            <a href="#"><FaFacebookF /></a>
+            <a href="#"><FaFacebook /></a>
             <a href="https://www.tiktok.com/@the.mukus.luxury?_t=ZM-8w34evux0dz&_r=1" target="_blank"><FaTiktok /></a>
             <a href="https://www.instagram.com/themukusluxury?igsh=MTA1enhzaW5peWo3Zw%3D%3D" target="_blank"><FaInstagram /></a>
           </div>

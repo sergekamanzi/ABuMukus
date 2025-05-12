@@ -3,12 +3,12 @@ import './destination.css';
 import { FaMountain, FaTree, FaWater } from 'react-icons/fa';
 
 // Placeholder images (you can replace these with actual image paths)
-import cityImage from '/kigali city.png';
+import cityImage from '/city.png';
 import beachImage from '/nyungwe.jpg';
 import riverImage from '/nyanza.jpg';
 import parkImage from '/gisenyi.jpg';
 import lakeImage from '/akagera.jpg';
-import zooImage from '/volcanoes park.jpg';
+import zooImage from '/volcanoes.jpg';
 
 const Destination = () => {
     // Map features data
