@@ -1,111 +1,165 @@
 /* Destination Body Section */
-  .destination-body {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Header Styles */
-  .destination-header h1 {
-    font-size: 2.5rem;
-    color: #165c30; /* Orange color matching the image */
-    margin-bottom: 10px;
-  }
-  
-  .destination-header p {
-    font-size: 1.2rem;
-    color: #5f5c5c;
-    margin-bottom: 30px;
-  }
-  
-  /* Grid Layout for Destinations */
+.destination-body {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.destination-header h1 {
+  font-size: 2.5rem;
+  color: #165c30;
+  margin-bottom: 10px;
+}
+
+.destination-header p {
+  font-size: 1.2rem;
+  color: #5f5c5c;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout for Destinations */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Destination Item Styles */
+.destination-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.destination-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.destination-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: lowercase;
+}
+
+/* Existing Responsive Design for Destination Body */
+@media (max-width: 768px) {
   .destination-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  /* Destination Item Styles */
-  .destination-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  .destination-header h1 {
+    font-size: 2rem;
   }
-  
-  .destination-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-  }
-  
-  .destination-label {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
+
+  .destination-header p {
     font-size: 1rem;
-    text-transform: lowercase;
-  }
-  
-  /* Responsive Design */
-  
-  /* Tablets (768px and below) */
-  @media (max-width: 768px) {
-    .destination-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .destination-header h1 {
-      font-size: 2rem;
-    }
-  
-    .destination-header p {
-      font-size: 1rem;
-    }
-  
-    .destination-item img {
-      height: 180px;
-    }
-  }
-  
-  /* Mobile (480px and below) */
-  @media (max-width: 480px) {
-    .destination-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .destination-header h1 {
-      font-size: 1.5rem;
-    }
-  
-    .destination-header p {
-      font-size: 0.9rem;
-    }
-  
-    .destination-item img {
-      height: 150px;
-    }
-  
-    .destination-label {
-      font-size: 0.9rem;
-    }
   }
 
+  .destination-item img {
+    height: 180px;
+  }
+}
 
-  /* map section start*/
+@media (max-width: 480px) {
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
 
-  /* Map Section Styles */
+  .destination-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .destination-header p {
+    font-size: 0.9rem;
+  }
+
+  .destination-item img {
+    height: 150px;
+  }
+
+  .destination-label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Galaxy Z Flip Specific Media Query (Portrait Mode - 412px width) */
+@media only screen and (min-width: 412px) and (max-width: 414px) {
+  .destination-body {
+    padding: 20px 10px;
+  }
+
+  .destination-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .destination-header p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .destination-item img {
+    height: 160px;
+  }
+
+  .destination-label {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+}
+
+/* Galaxy Z Flip Landscape Mode (1004px height) */
+@media only screen and (min-device-width: 1004px) and (orientation: landscape) {
+  .destination-body {
+    padding: 20px 10px;
+  }
+
+  .destination-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .destination-header p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .destination-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .destination-item img {
+    height: 140px;
+  }
+
+  .destination-label {
+    font-size: 0.8rem;
+    padding: 3px 6px;
+  }
+}
+
+/* Map Section Styles */
 .map-section {
   padding: 40px 20px;
-  background-color: #f9f9f9; /* Light background for contrast */
+  background-color: #f9f9f9;
 }
 
 .map-container {
@@ -148,7 +202,7 @@
 
 .icon-item .icon {
   font-size: 1.5rem;
-  color: #8e5f21; /* Matching the highlight color */
+  color: #8e5f21;
 }
 
 .icon-item span {
@@ -167,42 +221,125 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design for Map Section */
+/* Existing Responsive Design for Map Section */
 @media (max-width: 768px) {
   .map-container {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .map-text {
-      text-align: center;
+    text-align: center;
   }
 
   .map-icons {
-      flex-direction: row;
-      justify-content: center;
-      gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
   }
 
   .map-embed {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .map-text h3 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .map-text p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 
   .icon-item .icon {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .icon-item span {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Galaxy Z Flip Specific Media Query (Portrait Mode - 412px width) */
+@media only screen and (min-width: 412px) and (max-width: 414px) {
+  .map-section {
+    padding: 20px 10px;
+  }
+
+  .map-container {
+    gap: 20px;
+  }
+
+  .map-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .map-text p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .map-icons {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .icon-item .icon {
+    font-size: 1.2rem;
+  }
+
+  .icon-item span {
+    font-size: 0.9rem;
+  }
+
+  .map-embed iframe {
+    height: 250px;
+  }
+}
+
+/* Galaxy Z Flip Landscape Mode (1004px height) */
+@media only screen and (min-device-width: 1004px) and (orientation: landscape) {
+  .map-section {
+    padding: 20px 10px;
+  }
+
+  .map-container {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .map-text {
+    text-align: left;
+  }
+
+  .map-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .map-text p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .map-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .icon-item .icon {
+    font-size: 1.1rem;
+  }
+
+  .icon-item span {
+    font-size: 0.8rem;
+  }
+
+  .map-embed {
+    max-width: 50%;
+  }
+
+  .map-embed iframe {
+    height: 200px;
   }
 }
