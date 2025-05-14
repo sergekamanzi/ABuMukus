@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact.css';
 import { Link } from 'react-router-dom';
-import { FaTiktok, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaTiktok, FaInstagram } from 'react-icons/fa';
 import { MdEmail, MdPhone, MdLocationPin } from 'react-icons/md';
 
 const Contact = () => {
@@ -17,7 +17,7 @@ const Contact = () => {
             and start living the moment.
           </p>
           <div className="social-icons">
-            <a href="#"><FaFacebook /></a>
+            <a href="#"><FaFacebookF /></a>
             <a href="https://www.tiktok.com/@the.mukus.luxury?_t=ZM-8w34evux0dz&_r=1" target="_blank"><FaTiktok /></a>
             <a href="https://www.instagram.com/themukusluxury?igsh=MTA1enhzaW5peWo3Zw%3D%3D" target="_blank"><FaInstagram /></a>
           </div>
@@ -58,7 +58,7 @@ const Contact = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>© 2025 . Created by serge.K</p>
+        <p>© 2025 . Created by The Mukus Luxury Safaris</p>
         <div className="footer-links">
           <a href="#">Help</a>
           <a href="#">Privacy Policy</a>
